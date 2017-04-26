@@ -399,9 +399,7 @@
 				$( window ).scrollTop( $(".chat").height() );
 			}
 			
-			if (localStorage.nome == undefined) {
-				localStorage.setItem('nome',prompt('Informe o nome'));
-			}
+			localStorage.setItem('nome',prompt('Informe o nome',localStorage.nome));
 			
 			$("#nomeusuario").html(localStorage.nome);
 
